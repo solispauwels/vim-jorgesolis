@@ -16,7 +16,8 @@ Pathogen bundles
 $ cd ~/.vim/bundle
 $ git clone https://github.com/scrooloose/syntastic.git
 $ git clone https://github.com/tokutake/twig-indent.git
-git clone https://github.com/plasticboy/vim-markdown.git
+$ git clone https://github.com/plasticboy/vim-markdown.git
+$ git clone https://github.com/solispauwels/vim-jorgesolis.git
 ```
 
 vimrc
