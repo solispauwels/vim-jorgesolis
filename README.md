@@ -4,21 +4,17 @@ Jorge Solis VIM configuration
 Pathogen
 --------
 
-```sh
-$ mkdir -p ~/.vim/autoload ~/.vim/bundle
-$ curl -so ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-```
+    mkdir -p ~/.vim/autoload ~/.vim/bundle
+    curl -so ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 Pathogen bundles
 ----------------
 
-```
-$ cd ~/.vim/bundle
-$ git clone https://github.com/scrooloose/syntastic.git
-$ git clone https://github.com/tokutake/twig-indent.git
-$ git clone https://github.com/plasticboy/vim-markdown.git
-$ git clone https://github.com/solispauwels/vim-jorgesolis.git
-```
+    cd ~/.vim/bundle
+    git clone https://github.com/scrooloose/syntastic.git
+    git clone https://github.com/tokutake/twig-indent.git
+    git clone https://github.com/plasticboy/vim-markdown.git
+    git clone https://github.com/solispauwels/vim-jorgesolis.git
 
 vimrc
 -----
