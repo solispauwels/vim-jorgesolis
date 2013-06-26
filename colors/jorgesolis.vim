@@ -52,3 +52,10 @@ hi Special		guifg=#e7f6da gui=none
 " Columns
 hi ColorColumn  guibg=#202020
 hi SignColumn   guibg=#333333
+
+" Match
+hi red          guibg=#FF0000
+hi green        guibg=#00FF00
+hi blue         guibg=#0000FF
+hi cyan         guibg=#00FFFF
+hi magenta      guibg=#FF00FF

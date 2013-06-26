@@ -1,0 +1,53 @@
+function! Gvimrc()
+
+    set noswapfile
+	set nonu
+	set nowrap
+	set nobackup
+	set nowritebackup
+	set ignorecase
+	set incsearch
+	set hlsearch
+	set nocursorline
+    set cc=120
+	set modeline
+    set number
+	set guioptions-=T "remove toolbar
+	set si
+
+    "set wildmenu
+  	"set fileencoding=utf-8
+	"set enc=utf-8
+
+	colorscheme jorgesolis
+
+    let g:netrw_liststyle=3
+	let g:netrw_keepdir=1
+
+    filetype indent on
+
+	imenu HTML.Entities <esc>:call HTMLentities()<cr>i
+	menu HTML.Entities :call HTMLentities()<cr>
+
+	imap <F3> <esc>:set spell<cr>i
+	map <F3> :set spell<cr>:set spelllang=es<cr>
+
+	imap <F4> <esc>:set nospell<cr>i
+	map <F4> :set nospell<cr>
+
+	imap <F5> <C-R>=strftime("\/\/%I:%M %p %m\/%d/\%Y")<CR><CR>
+	map <F5> i<C-R>=strftime("\/\/%I:%M %p %m\/%d/\%Y")<CR><CR>
+
+	imap <F6> <esc>:set wrap!<cr>i
+	map <F6> :set wrap!<cr>
+
+    map <c-f> /
+	imap <c-f> <esc>/
+
+    autocmd BufWritePre * :%s/\s\+$//e
+
+    call MdFiles()
+    call LessFiles()
+    call Symfony2()
+
+endfunction
