@@ -15,6 +15,7 @@ Pathogen bundles
     git clone https://github.com/tokutake/twig-indent.git
     git clone https://github.com/plasticboy/vim-markdown.git
     git clone https://github.com/solispauwels/vim-jorgesolis.git
+    git clone https://github.com/groenewege/vim-less.git
 
 vimrc
 -----

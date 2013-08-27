@@ -58,7 +58,7 @@ function! Gvimrc()
     autocmd BufWritePre * :%s/\s\+$//e
 
     call MdFiles()
-    call LessFiles()
+    call TwigJSFiles()
     call Symfony2()
 
 endfunction
