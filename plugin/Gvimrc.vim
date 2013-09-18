@@ -9,10 +9,11 @@ function! Gvimrc()
     set hlsearch
     set nocursorline
     set cc=120
-    set modeline
+    set modelines=0
+    set nomodeline
     set number
     set guioptions-=T "remove toolbar
-    set si
+    set guitablabel=%t\ %M
 
     "set wildmenu
     "set fileencoding=utf-8
@@ -23,22 +24,30 @@ function! Gvimrc()
     let g:netrw_liststyle=3
     "let g:netrw_keepdir=0
 
-    filetype indent on
+    "filetype indent on
+    "set si
+    set ai
 
     imenu HTML.Entities <esc>:call HTMLentities()<cr>i
     menu HTML.Entities :call HTMLentities()<cr>
 
-    imap <F2> <esc>:cpf<cr>i
+    imap <F2> <esc>:cpf<cr>
     map <F2> :cpf<cr>
 
-    imap <F3> <esc>:cnf<cr>i
+    imap <F3> <esc>:cnf<cr>
     map <F3> :cnf<cr>
+
+    imap <F4> <esc>:execute "tabmove" tabpagenr() - 2<cr>i
+    map <F4> :execute "tabmove" tabpagenr() - 2<cr>
+
+    imap <F5> <esc>:execute "tabmove" tabpagenr()<cr>i
+    map <F5> :execute "tabmove" tabpagenr()<cr>
 
     "imap <F4> <esc>:set nospell<cr>i
     "map <F4> :set nospell<cr>
 
-    imap <F5> <C-R>=strftime("\/\/%I:%M %p %m\/%d/\%Y")<CR><CR>
-    map <F5> i<C-R>=strftime("\/\/%I:%M %p %m\/%d/\%Y")<CR><CR>
+    "imap <F5> <C-R>=strftime("\/\/%I:%M %p %m\/%d/\%Y")<CR><CR>
+    "map <F5> i<C-R>=strftime("\/\/%I:%M %p %m\/%d/\%Y")<CR><CR>
 
     imap <F6> <esc>:set wrap!<cr>i
     map <F6> :set wrap!<cr>
