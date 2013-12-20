@@ -14,6 +14,7 @@ function! Gvimrc()
     set number
     set guioptions-=T "remove toolbar
     set guitablabel=%t\ %M
+    set autochdir
 
     "set wildmenu
     "set fileencoding=utf-8
@@ -54,6 +55,11 @@ function! Gvimrc()
 
     map <c-f> /
     imap <c-f> <esc>/
+
+    nmap <silent> <A-Up> :wincmd k<CR>
+    nmap <silent> <A-Down> :wincmd j<CR>
+    nmap <silent> <A-Left> :wincmd h<CR>
+    nmap <silent> <A-Right> :wincmd l<CR>
 
     map <MiddleMouse> <Nop>
     imap <MiddleMouse> <Nop>

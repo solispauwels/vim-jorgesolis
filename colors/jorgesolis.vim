@@ -50,12 +50,12 @@ hi Number               guifg=#e5786d gui=none
 hi Special              guifg=#e7f6da gui=none
 
 " Columns
-hi ColorColumn          guibg=#202020
-hi SignColumn           guibg=#333333
+hi ColorColumn          guifg=#242424 guibg=#202020
+hi SignColumn           guifg=#242424 guibg=#333333
 
 " Match
-hi red                  guibg=#FF0000
-hi green                guibg=#00FF00
-hi blue                 guibg=#0000FF
-hi cyan                 guibg=#00FFFF
-hi magenta              guibg=#FF00FF
+hi red                  guifg=#242424 guibg=#FF0000
+hi green                guifg=#242424 guibg=#00FF00
+hi blue                 guifg=#242424 guibg=#0000FF
+hi cyan                 guifg=#242424 guibg=#00FFFF
+hi magenta              guifg=#242424 guibg=#FF00FF
