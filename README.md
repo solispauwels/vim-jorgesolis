@@ -49,5 +49,5 @@ Powerline Fonts
 ---------------
 
 ```sh
-curl -so ~/.fonts/Droid%20Sans%20Mono%20for%20Powerline.otf https://raw.github.com/Lokaltog/powerline-fonts/blob/master/DroidSansMono/Droid%20Sans%20Mono%20for%20Powerline.otf
+curl -so ~/.fonts/Droid%20Sans%20Mono%20for%20Powerline.otf https://github.com/Lokaltog/powerline-fonts/blob/master/DroidSansMono/Droid%20Sans%20Mono%20for%20Powerline.otf?raw=true
 ```
