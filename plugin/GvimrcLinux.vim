@@ -10,6 +10,7 @@ function! GvimrcLinux()
 	behave mswin
 
 	call Gvimrc()
+	call Android()
 
     set tabstop=4
 	set shiftwidth=4
