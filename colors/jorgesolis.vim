@@ -50,7 +50,7 @@ hi Number               guifg=#e5786d gui=none
 hi Special              guifg=#e7f6da gui=none
 
 " Columns
-hi ColorColumn          guifg=#242424 guibg=#202020
+hi ColorColumn          guifg=#999999 guibg=#202020
 hi SignColumn           guifg=#242424 guibg=#333333
 
 " Match
