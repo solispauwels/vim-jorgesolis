@@ -9,3 +9,6 @@ let g:syntastic_javascript_checkers=['jshint']
 let g:ctrlp_match_window = 'top,order:btt,min:1,max:10,results:10'
 let g:airline_powerline_fonts = 1
 let NERDTreeShowHidden=1
+
+set t_Co=256
+colorscheme wombat256mod
