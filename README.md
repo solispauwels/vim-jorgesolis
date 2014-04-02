@@ -21,6 +21,7 @@ Pathogen bundles
     git clone https://github.com/solispauwels/vim-jorgesolis.git
     git clone https://github.com/groenewege/vim-less.git
     git clone https://github.com/msanders/snipmate.vim
+    git clone https://github.com/nathanaelkane/vim-indent-guides
 
 Powerline Fonts
 ---------------
