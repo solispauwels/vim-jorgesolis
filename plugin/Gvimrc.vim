@@ -13,6 +13,7 @@ function! Gvimrc()
     set nomodeline
     set number
     set guioptions-=T "remove toolbar
+    set guioptions-=m "remove menu
     set guitablabel=%t\ %M
     set autochdir
 
@@ -28,9 +29,6 @@ function! Gvimrc()
     "filetype indent on
     "set si
     set ai
-
-    imenu HTML.Entities <esc>:call HTMLentities()<cr>i
-    menu HTML.Entities :call HTMLentities()<cr>
 
     imap <F2> <esc>:cpf<cr>
     map <F2> :cpf<cr>
@@ -53,8 +51,13 @@ function! Gvimrc()
     imap <F6> <esc>:set wrap!<cr>i
     map <F6> :set wrap!<cr>
 
+    imenu <F7> <esc>:call HTMLentities()<cr>i
+    menu <F7> :call HTMLentities()<cr>
+
     map <c-f> /
     imap <c-f> <esc>/
+
+    nnoremap <c-d> i<c-d><esc>
 
     nmap <silent> <A-Up> :wincmd k<CR>
     nmap <silent> <A-Down> :wincmd j<CR>
@@ -74,6 +77,5 @@ function! Gvimrc()
 
     call MdFiles()
     call TwigJSFiles()
-    call Symfony2()
 
 endfunction
