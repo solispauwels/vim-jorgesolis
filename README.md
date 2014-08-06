@@ -5,7 +5,7 @@ Pathogen
 --------
 
     mkdir -p ~/.vim/autoload ~/.vim/bundle
-    curl -so ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 Pathogen bundles
 ----------------
@@ -26,7 +26,7 @@ Pathogen bundles
 Powerline Fonts
 ---------------
 
-    curl -so ~/.fonts/Droid+Sans+Mono+for+Powerline.otf https://raw.github.com/Lokaltog/powerline-fonts/master/DroidSansMono/Droid%20Sans%20Mono%20for%20Powerline.otf
+    wget -O ~/.fonts/Droid+Sans+Mono+for+Powerline.otf https://raw.github.com/Lokaltog/powerline-fonts/master/DroidSansMono/Droid%20Sans%20Mono%20for%20Powerline.otf
 
 vimrc & gvimrc
 --------------

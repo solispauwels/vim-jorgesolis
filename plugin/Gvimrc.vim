@@ -51,8 +51,8 @@ function! Gvimrc()
     imap <F6> <esc>:set wrap!<cr>i
     map <F6> :set wrap!<cr>
 
-    imenu <F7> <esc>:call HTMLentities()<cr>i
-    menu <F7> :call HTMLentities()<cr>
+    imap <F7> <esc>:call HTMLentities()<cr>i
+    map <F7> :call HTMLentities()<cr>
 
     map <c-f> /
     imap <c-f> <esc>/
