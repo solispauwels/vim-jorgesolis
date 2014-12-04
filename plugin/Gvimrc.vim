@@ -16,6 +16,7 @@ function! Gvimrc()
     set guioptions-=m "remove menu
     set guitablabel=%t\ %M
     set autochdir
+    set formatoptions+=r
 
     "set wildmenu
     "set fileencoding=utf-8
