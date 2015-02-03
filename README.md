@@ -37,5 +37,4 @@ vimrc & gvimrc
 Markdown Edit
 -------------
 
-    cd /var/www/
-    git clone https://github.com/solispauwels/markdown
+    npm install -g flavored-markdown
