@@ -27,9 +27,10 @@ function! Gvimrc()
     let g:netrw_liststyle=3
     "let g:netrw_keepdir=0
 
-    "filetype indent on
-    "set si
+    filetype indent on
+    set si
     set ai
+    let g:html_indent_inctags = "li,p,head"
 
     imap <F2> <esc>:cpf<cr>
     map <F2> :cpf<cr>
@@ -78,5 +79,7 @@ function! Gvimrc()
 
     call MdFiles()
     call TwigJSFiles()
+
+    autocmd BufRead,BufNewFile *.* match gray /  /
 
 endfunction

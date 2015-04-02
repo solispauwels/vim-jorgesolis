@@ -28,7 +28,7 @@ hi Normal               guifg=#f6f3e8 guibg=#242424 gui=none
 hi NonText              guifg=#808080 guibg=#242424 gui=none
 hi LineNr               guifg=#444444 guibg=#242424 gui=none
 hi StatusLine           guifg=#f6f3e8 guibg=#444444 gui=italic
-hi StatusLineNC         guifg=#857b6f guibg=#444444 gui=none
+ grayhi StatusLineNC         guifg=#857b6f guibg=#444444 gui=none
 hi VertSplit            guifg=#444444 guibg=#444444 gui=none
 hi Folded               guibg=#384048 guifg=#a0a8b0 gui=none
 hi Title                guifg=#f6f3e8 guibg=NONE    gui=bold
@@ -54,6 +54,8 @@ hi ColorColumn          guifg=#999999 guibg=#202020
 hi SignColumn           guifg=#242424 guibg=#333333
 
 " Match
+hi gray                 guifg=#242424 guibg=#2D2D2D
+hi yellow               guifg=#242424 guibg=#FFFF00
 hi red                  guifg=#242424 guibg=#FF0000
 hi green                guifg=#242424 guibg=#00FF00
 hi blue                 guifg=#242424 guibg=#0000FF

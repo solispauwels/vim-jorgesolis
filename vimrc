@@ -14,6 +14,11 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 3
 let g:indent_guides_auto_colors = 0
+
+autocmd BufReadPost * :DetectIndent
+let g:detectindent_preferred_expandtab = 1
+let g:detectindent_preferred_indent = 4
+
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#222222 ctermbg=232
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#282828 ctermbg=236
 
