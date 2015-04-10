@@ -44,3 +44,50 @@ function! HTMLentities()
 	%s/€/\&#8364;/ge
 
 endfunction
+
+function! HTMLentitiesDecode()
+	%s/&aacute;/á/ge
+	%s/&eacute;/é/ge
+	%s/&iacute;/í/ge
+	%s/&oacute;/ó/ge
+	%s/&uacute;/ú/ge
+	%s/&agrave;/à/ge
+	%s/&egrave;/è/ge
+	%s/&igrave;/ì/ge
+	%s/&ograve;/ò/ge
+	%s/&ugrave;/ù/ge
+	%s/&acirc;/â/ge
+	%s/&ecirc;/ê/ge
+	%s/&icirc;/î/ge
+	%s/&ocirc;/ô/ge
+	%s/&ucirc;/û/ge
+	%s/&auml;/ä/ge
+	%s/&euml;/ë/ge
+	%s/&iuml;/ï/ge
+	%s/&ouml;/ö/ge
+	%s/&uuml;/ü/ge
+	%s/&Aacute;/Á/ge
+	%s/&Eacute;/É/ge
+	%s/&Iacute;/Í/ge
+	%s/&Oacute;/Ó/ge
+	%s/&Uacute;/Ú/ge
+	%s/&Agrave;/À/ge
+	%s/&Egrave;/È/ge
+	%s/&Igrave;/Ì/ge
+	%s/&Ograve;/Ò/ge
+	%s/&ugrave;/Ù/ge
+	%s/&Acirc;/Â/ge
+	%s/&Ecirc;/Ê/ge
+	%s/&Icirc;/Î/ge
+	%s/&Ocirc;/Ô/ge
+	%s/&Ucirc;/Û/ge
+	%s/&Auml;/Ä/ge
+	%s/&Euml;/Ë/ge
+	%s/&Iuml;/Ï/ge
+	%s/&Ouml;/Ö/ge
+	%s/&Uuml;/Ü/ge
+	%s/&ccedil;/ç/ge
+	%s/&ntilde;/ñ/ge
+	%s/&#8364;/€/ge
+
+endfunction
