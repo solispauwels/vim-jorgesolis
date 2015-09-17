@@ -18,7 +18,7 @@
 	"quotmark": true,
 	"undef": true,
 	"unused": "vars",
-	"strict": true,
+	//"strict": true,
 	"maxparams": 10,
 	"maxdepth": 5,
 	"maxstatements": 40,
@@ -52,6 +52,7 @@
 	"noyield": false,
 
 	"browser": true,
+	"node": true,
 
 	"globals": {
 		"angular": true,
