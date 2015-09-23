@@ -91,7 +91,7 @@
 	"requireSpacesInsideBrackets": false,
 	"requireSpacesInsideObjectBrackets": "all",
 	"requireSpacesInsideParentheses": false,
-	"requireTrailingComma": true,
+	"requireTrailingComma": false,
 	"validateAlignedFunctionParameters": {
 		"lineBreakAfterOpeningBrace": true,
 		"lineBreakBeforeClosingBrace": true
