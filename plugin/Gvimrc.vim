@@ -1,3 +1,40 @@
+function MyTabLine()
+    let s = ''
+    let t = tabpagenr()
+    let i = 1
+
+    while i <= tabpagenr('$')
+        let buflist = tabpagebuflist(i)
+        let winnr = tabpagewinnr(i)
+
+        let s .= '%' . i . 'T'
+        let s .= (i == t ? '%1*' : '%2*')
+        "let s .= ' '
+        "let s .= i . ')'
+        let s .= '%*'
+        "let s .= (i == t ? '%#TabLineSel#' : '%#TabLine#')
+        let s .= (i == t ? '%#TabLineSel#' : '%#TabLineFill#')
+
+        let file = bufname(buflist[winnr - 1])
+        let file = fnamemodify(file, ':p:t')
+
+        if file == ''
+            let file = '[No Name]'
+        endif
+
+        let s .= ' '
+        let s .= file
+        let s .= ' '
+
+        let i = i + 1
+    endwhile
+
+    let s .= '%T%#TabLineFill#%='
+    "let s .= (tabpagenr('$') > 1 ? '%999XX' : 'X')
+
+    return s
+endfunction
+
 function! Gvimrc()
 
     set noswapfile
@@ -14,15 +51,21 @@ function! Gvimrc()
     set number
     set guioptions-=T "remove toolbar
     set guioptions-=m "remove menu
+    set guioptions-=e "remove tabs in gui mode
+    set guioptions-=r "remove scroll right
+    set guioptions-=L "remove scroll left
     set guitablabel=%t\ %M
     set autochdir
     set formatoptions+=r
+    set breakindent
 
     "set wildmenu
     "set fileencoding=utf-8
     "set enc=utf-8
 
     colorscheme jorgesolis
+    "colorscheme solarized
+    "set background=light
 
     let g:netrw_liststyle=3
     "let g:netrw_keepdir=0
@@ -38,11 +81,11 @@ function! Gvimrc()
     imap <F3> <esc>:cnf<cr>
     map <F3> :cnf<cr>
 
-    imap <F4> <esc>:execute "tabmove" tabpagenr() - 2<cr>i
-    map <F4> :execute "tabmove" tabpagenr() - 2<cr>
+    imap <F4> <esc>:tabmove -<cr>i
+    map <F4> :tabmove -<cr>
 
-    imap <F5> <esc>:execute "tabmove" tabpagenr()<cr>i
-    map <F5> :execute "tabmove" tabpagenr()<cr>
+    imap <F5> <esc>:tabmove +<cr>i
+    map <F5> :tabmove +<cr>
 
     "imap <F4> <esc>:set nospell<cr>i
     "map <F4> :set nospell<cr>
@@ -88,5 +131,8 @@ function! Gvimrc()
     augroup filetype
         autocmd! BufRead,BufNewFile *.json set filetype=json syntax=javascript
     augroup END
+
+    set stal=2
+    set tabline=%!MyTabLine()
 
 endfunction

@@ -1,4 +1,5 @@
 {
+	"esversion": 6,
 	"bitwise": true,
 	"camelcase": true,
 	"curly": true,
@@ -18,8 +19,7 @@
 	"quotmark": true,
 	"undef": true,
 	"unused": "vars",
-	//"strict": true,
-	"maxparams": 10,
+	"maxparams": 20,
 	"maxdepth": 5,
 	"maxstatements": 40,
 	"maxcomplexity": 8,
@@ -55,6 +55,7 @@
 	"node": true,
 
 	"globals": {
+		"Promise": true,
 		"angular": true,
 		"moment": true,
 		"$": false

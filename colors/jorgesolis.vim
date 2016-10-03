@@ -49,6 +49,11 @@ hi PreProc              guifg=#e5786d gui=none
 hi Number               guifg=#e5786d gui=none
 hi Special              guifg=#e7f6da gui=none
 
+hi TabLineFill          guifg=#333333 guibg=#aaaaaa
+hi TabLine              guifg=#aaaaaa guibg=#333333
+hi TabLineSel           guifg=#ffffff guibg=#242424
+hi Trololo              guifg=#242424 guibg=#333333
+
 " Columns
 hi ColorColumn          guifg=#999999 guibg=#202020
 hi SignColumn           guifg=#242424 guibg=#333333
