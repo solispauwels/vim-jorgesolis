@@ -18,6 +18,10 @@ function MyTabLine()
         let file = bufname(buflist[winnr - 1])
         let file = fnamemodify(file, ':p:t')
 
+        if getbufvar(buflist[winnr - 1], "&modified")
+            let file .= ' +'
+        endif
+
         if file == ''
             let file = '[No Name]'
         endif
@@ -126,7 +130,8 @@ function! Gvimrc()
     call MdFiles()
     call TwigJSFiles()
 
-    autocmd BufRead,BufNewFile *.* match gray /  /
+    "autocmd BufRead,BufNewFile *.* match gray /  /
+    "autocmd BufRead,BufNewFile *.* match LineNr /  /
 
     augroup filetype
         autocmd! BufRead,BufNewFile *.json set filetype=json syntax=javascript
