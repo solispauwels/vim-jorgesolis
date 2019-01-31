@@ -68,5 +68,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#282828 ctermbg=236
 
 syntax on
 
+set noeb vb t_vb=
+
 set t_Co=256
 colorscheme wombat256mod
