@@ -1,6 +1,7 @@
 function! GvimrcLinux()
 
-	set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 14
+	"set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 14
+	set guifont=Droid_Sans_Mono_Dotted_for_Powe:h11
 
 	if filereadable("/etc/vim/gvimrc.local")
 		source /etc/vim/gvimrc.local

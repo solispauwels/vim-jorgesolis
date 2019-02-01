@@ -16,12 +16,14 @@ Pathogen bundles
     git clone https://github.com/kien/ctrlp.vim.git
     git clone https://github.com/bling/vim-airline.git
     git clone https://github.com/jistr/vim-nerdtree-tabs.git
-    git clone https://github.com/tokutake/twig-indent.git
     git clone https://github.com/plasticboy/vim-markdown.git
     git clone https://github.com/solispauwels/vim-jorgesolis.git
     git clone https://github.com/groenewege/vim-less.git
     git clone https://github.com/msanders/snipmate.vim
     git clone https://github.com/nathanaelkane/vim-indent-guides
+    git clone https://github.com/ciaranm/detectindent
+    git clone https://github.com/vim-airline/vim-airline-themes
+    git clone https://github.com/dreadnaut/vim-bargreybars.git
 
 Powerline Fonts
 ---------------
