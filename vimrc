@@ -8,8 +8,12 @@ let g:syntastic_java_checkers=['javac']
 
 let g:ctrlp_match_window = 'top,order:btt,min:1,max:10,results:10'
 
-let g:airline_powerline_fonts = 1
 let g:airline_theme='wombat'
+let g:airline_powerline_fonts=1
+
+"let g:Powerline_symbols = 'unicode'
+
+set encoding=utf-8
 
 let NERDTreeShowHidden=1
 
@@ -31,6 +35,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#282828 ctermbg=236
 syntax on
 
 set noeb vb t_vb=
+au GUIEnter * set vb t_vb=
 
 set t_Co=256
 colorscheme wombat256mod
