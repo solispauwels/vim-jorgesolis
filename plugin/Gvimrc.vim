@@ -100,11 +100,11 @@ function! Gvimrc()
     imap <F6> <esc>:set wrap!<cr>i
     map <F6> :set wrap!<cr>
 
-    imenu HTML.Entities <esc>:call HTMLentities()<cr>i
-    menu HTML.Entities :call HTMLentities()<cr>
+    "imenu HTML.Entities <esc>:call HTMLentities()<cr>i
+    "menu HTML.Entities :call HTMLentities()<cr>
 
-    imenu HTML.Decode <esc>:call HTMLentitiesDecode()<cr>i
-    menu HTML.Decode :call HTMLentitiesDecode()<cr>
+    "imenu HTML.Decode <esc>:call HTMLentitiesDecode()<cr>i
+    "menu HTML.Decode :call HTMLentitiesDecode()<cr>
 
     map <c-f> /
     imap <c-f> <esc>/
