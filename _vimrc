@@ -1,8 +1,7 @@
-execute pathogen#infect()
-
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['java', 'php', 'javascript', 'json'] }
 let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
-let g:syntastic_javascript_checkers=['standard']
+let g:syntastic_javascript_checkers=['eslint']
+let g:syntastic_javascript_eslint_args=['--fix']
 let g:syntastic_json_checkers=['jsonlint']
 let g:syntastic_java_checkers=['javac']
 
@@ -26,6 +25,8 @@ autocmd BufReadPost * :DetectIndent
 let g:detectindent_preferred_expandtab = 1
 let g:detectindent_preferred_indent = 2
 
+let g:snipMate = { 'snippet_version' : 1 }
+
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=#222222 ctermbg=232
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#282828 ctermbg=236
 
@@ -39,3 +40,5 @@ au GUIEnter * set vb t_vb=
 
 set t_Co=256
 colorscheme wombat256mod
+
+au GUIEnter * call GvimrcWindows()

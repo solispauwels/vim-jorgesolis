@@ -1,32 +1,12 @@
 Jorge Solis VIM configuration
 =============================
 
-Pathogen
---------
-
-    mkdir -p ~/.vim/autoload ~/.vim/bundle
-    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-Pathogen bundles
+Install
 ----------------
 
-    cd ~/.vim/bundle
-    git clone https://github.com/scrooloose/syntastic.git
-    git clone https://github.com/scrooloose/nerdtree.git
-    git clone https://github.com/kien/ctrlp.vim.git
-    git clone https://github.com/bling/vim-airline.git
-    git clone https://github.com/jistr/vim-nerdtree-tabs.git
-    git clone https://github.com/plasticboy/vim-markdown.git
-    git clone https://github.com/solispauwels/vim-jorgesolis.git
-    git clone https://github.com/groenewege/vim-less.git
-    git clone https://github.com/nathanaelkane/vim-indent-guides
-    git clone https://github.com/ciaranm/detectindent
-    git clone https://github.com/vim-airline/vim-airline-themes
-    git clone https://github.com/dreadnaut/vim-bargreybars.git
-    git clone https://github.com/garbas/vim-snipmate
-    git clone https://github.com/tomtom/tlib_vim.git
-    git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
-    git clone https://github.com/honza/vim-snippets.git
+    mkdir ~/.vim/pack
+    cd ~/.vim/pack
+    git clone --recurse-submodules https://github.com/solispauwels/vim-jorgesolis.git
 
 Powerline Fonts
 ---------------
@@ -36,8 +16,7 @@ Powerline Fonts
 vimrc & gvimrc
 --------------
 
-    ln -sf ~/.vim/bundle/vim-jorgesolis/vimrc ~/.vimrc
-    ln -sf ~/.vim/bundle/vim-jorgesolis/gvimrc ~/.gvimrc
+    ln -sf ~/.vim/pack/vim-jorgesolis/vimrc ~/.vimrc
 
 Markdown Edit
 -------------

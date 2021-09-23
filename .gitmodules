@@ -1,0 +1,45 @@
+[submodule "start/syntastic"]
+	path = start/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "start/nerdtree"]
+	path = start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "start/ctrlp.vim"]
+	path = start/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "start/vim-airline"]
+	path = start/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "start/vim-nerdtree-tabs"]
+	path = start/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "start/vim-markdown"]
+	path = start/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "start/vim-less"]
+	path = start/vim-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "start/vim-indent-guides"]
+	path = start/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule "start/detectindent"]
+	path = start/detectindent
+	url = https://github.com/ciaranm/detectindent
+[submodule "start/vim-airline-themes"]
+	path = start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "start/vim-bargreybars"]
+	path = start/vim-bargreybars
+	url = https://github.com/dreadnaut/vim-bargreybars.git
+[submodule "start/vim-snipmate"]
+	path = start/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate
+[submodule "start/vim-snippets"]
+	path = start/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "start/vim-addon-mw-utils"]
+	path = start/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "start/tlib_vim"]
+	path = start/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
