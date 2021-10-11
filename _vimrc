@@ -13,6 +13,7 @@ let g:airline_powerline_fonts=1
 "let g:Powerline_symbols = 'unicode'
 
 let NERDTreeShowHidden=1
+let g:NERDTreeWinSize=60
 
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
