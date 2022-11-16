@@ -6,7 +6,6 @@ function! GvimrcLinux()
 		source /etc/vim/gvimrc.local
 	endif
 
-	"call Vimrc()
 	call Gvimrc()
 	"call Android()
 

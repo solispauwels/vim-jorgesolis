@@ -1,6 +1,3 @@
-[submodule "start/syntastic"]
-	path = start/syntastic
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "start/nerdtree"]
 	path = start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -43,3 +40,36 @@
 [submodule "start/tlib_vim"]
 	path = start/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
+[submodule "start/vim-prisma"]
+	path = start/vim-prisma
+	url = git@github.com:pantharshit00/vim-prisma.git
+[submodule "start/ale"]
+	path = start/ale
+	url = git@github.com:dense-analysis/ale.git
+[submodule "barbar.nvim"]
+	path = barbar.nvim
+	url = https://github.com/romgrk/barbar.nvim.git
+[submodule "start/barbar.nvim"]
+	path = start/barbar.nvim
+	url = https://github.com/romgrk/barbar.nvim.git
+[submodule "start/nvim-web-devicons"]
+	path = start/nvim-web-devicons
+	url = https://github.com/kyazdani42/nvim-web-devicons.git
+[submodule "start/vim-plug"]
+	path = start/vim-plug
+	url = https://github.com/junegunn/vim-plug.git
+[submodule "start/vim-plugin/autoload"]
+	path = start/vim-plugin/autoload
+	url = https://github.com/junegunn/vim-plug.git
+[submodule "start/packer.nvim"]
+	path = start/packer.nvim
+	url = https://github.com/wbthomason/packer.nvim.git
+[submodule "start/nvim-tree.lua"]
+	path = start/nvim-tree.lua
+	url = https://github.com/kyazdani42/nvim-tree.lua.git
+[submodule "start/vim-javascript"]
+	path = start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "start/typescript-vim"]
+	path = start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git

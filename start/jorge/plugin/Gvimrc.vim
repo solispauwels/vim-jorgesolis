@@ -87,16 +87,17 @@ function! Gvimrc()
     map <4-MiddleMouse> <Nop>
     imap <4-MiddleMouse> <Nop>
 
-    autocmd BufWritePre * :%s/\s\+$//e
+    "autocmd BufWritePre * :%s/\s\+$//e
 
-    call MdFiles()
-    call TwigJSFiles()
+    "call MdFiles()
+    "call TwigJSFiles()
 
     "autocmd BufRead,BufNewFile *.* match gray /  /
     "autocmd BufRead,BufNewFile *.* match LineNr /  /
 
     augroup filetype
-        autocmd! BufRead,BufNewFile *.json set filetype=json syntax=javascript
+        "autocmd! BufRead,BufNewFile *.json set filetype=json syntax=javascript
+        autocmd BufRead,FileType * call ALELSPMappings()
     augroup END
 
     "set tabstop=4
@@ -109,5 +110,15 @@ function! Gvimrc()
 
     set stal=2
     set tabline=%!MyTabLine()
+
+    set wildignore+=*/generated/*
+    set wildignore+=*/node_modules/*
+    set wildignore+=*/dist/*
+
+    "highlight! CopilotSuggestion guifg=#99968b gui=italic
+
+    " If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+    autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+        \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
 endfunction
