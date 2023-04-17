@@ -47,6 +47,7 @@ hi Keyword              guifg=#8ac6f2 gui=none
 hi PreProc              guifg=#e5786d gui=none
 hi Number               guifg=#e5786d gui=none
 hi Special              guifg=#e7f6da gui=none
+hi SpellBad             cterm=underline ctermfg=red ctermbg=NONE
 
 hi TabLineFill          guifg=#333333 guibg=#aaaaaa
 hi TabLine              guifg=#aaaaaa guibg=#333333

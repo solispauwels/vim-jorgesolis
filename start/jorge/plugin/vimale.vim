@@ -1,4 +1,4 @@
-function ALELSPMappings()
+function! ALELSPMappings()
 	let l:lsp_found=0
 	for l:linter in ale#linter#Get(&filetype) | if !empty(l:linter.lsp) | let l:lsp_found=1 | endif | endfor
 	if (l:lsp_found)

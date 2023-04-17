@@ -24,6 +24,7 @@ function! Gvimrc()
     set autochdir
     set formatoptions+=r
     set breakindent
+    set noballooneval
 
     "set wildmenu
     "set fileencoding=utf-8
@@ -86,6 +87,8 @@ function! Gvimrc()
     imap <3-MiddleMouse> <Nop>
     map <4-MiddleMouse> <Nop>
     imap <4-MiddleMouse> <Nop>
+
+    vnoremap <C-v> d<ESC>"+Pi
 
     "autocmd BufWritePre * :%s/\s\+$//e
 

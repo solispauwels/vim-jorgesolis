@@ -1,4 +1,4 @@
-function MyTabLine()
+function! MyTabLine()
 
     let s = ''
     let t = tabpagenr()

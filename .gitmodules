@@ -73,3 +73,6 @@
 [submodule "start/typescript-vim"]
 	path = start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "start/vim-jsx-pretty"]
+	path = start/vim-jsx-pretty
+	url = git@github.com:MaxMEllon/vim-jsx-pretty.git
