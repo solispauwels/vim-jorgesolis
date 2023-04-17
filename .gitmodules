@@ -76,3 +76,6 @@
 [submodule "start/vim-jsx-pretty"]
 	path = start/vim-jsx-pretty
 	url = git@github.com:MaxMEllon/vim-jsx-pretty.git
+[submodule "start/codeium.vim"]
+	path = start/codeium.vim
+	url = https://github.com/Exafunction/codeium.vim
