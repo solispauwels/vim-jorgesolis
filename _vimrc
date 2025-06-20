@@ -37,6 +37,7 @@ let g:detectindent_preferred_expandtab = 1
 let g:detectindent_preferred_indent = 2
 
 let g:snipMate = { 'snippet_version' : 1 }
+let g:copilot_no_tab_map = v:true
 
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=#222222 ctermbg=232
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#282828 ctermbg=236
