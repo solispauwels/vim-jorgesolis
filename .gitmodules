@@ -19,9 +19,6 @@
 [submodule "start/vim-indent-guides"]
 	path = start/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
-[submodule "start/detectindent"]
-	path = start/detectindent
-	url = https://github.com/ciaranm/detectindent
 [submodule "start/vim-airline-themes"]
 	path = start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
@@ -76,6 +73,6 @@
 [submodule "start/vim-jsx-pretty"]
 	path = start/vim-jsx-pretty
 	url = git@github.com:MaxMEllon/vim-jsx-pretty.git
-[submodule "start/codeium.vim"]
-	path = start/codeium.vim
-	url = https://github.com/Exafunction/codeium.vim
+[submodule "start/copilot.vim"]
+	path = start/copilot.vim
+	url = git@github.com:github/copilot.vim.git
